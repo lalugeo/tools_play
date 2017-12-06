@@ -1,0 +1,14 @@
+namespace testtools.db;
+
+context tabs {
+
+	entity tab1{
+		key col1 : Integer;
+		col2 : Integer;
+	};
+	
+	entity tab2{
+			key col3 : Integer;
+		col4 : Integer;
+	};
+};

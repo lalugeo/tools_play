@@ -1,0 +1,12 @@
+PROCEDURE "testtools.db::test1" ( )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   --READS SQL DATA 
+   AS
+BEGIN
+   /*************************************
+       Write your procedure logic 
+   *************************************/  
+   select sum("col1") + sum("col3") "sum_total" from "testtools.db::tabs.tab1","testtools.db::tabs.tab2";
+END
